@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Attributi</title>
+    <meta name="author" content="Francesco Cristini">
+    <meta name="description" content="Soluzione esercizio sugli attributi Francesco Cristini">
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Attributi">
+    <meta property="og:description" content="Soluzione esercizio sugli attributi Francesco Cristini">
+    <meta property="og:url" content="https://***.it">
+    <meta property="og:image" content="assets/***">
+
+</head>
+<body>
+    <!--Form con input numerico, input data, checkbox multiplo e bottone-->
+    <form action="***.php" method="get">
+        <!--sezione con inpunt numerico e data mensile-->
+        <section>
+            
+            <div>
+                <label for="number-input">Inserisci un numero</label>
+                <input type="number" name="number" id="number-input" min="0" max="100" step="2">
+            </div>
+            <div>
+                <label for="data-input">inserisci una data qualunque</label>
+                <input type="month" name="data-input" id="data-input">
+            </div>
+
+        </section>
+        <!--sezioine con fieldset con input checkbox per hobby-->
+        <section>
+            
+            <fieldset>
+
+                <legend>Hobby</legend>
+                <div>
+                    <input type="checkbox" name="Calcio" id="Calcio">
+                    <label for="Calcio">Calcio</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="Pallacanestro" id="Pallacanestro">
+                    <label for="Pallacanestro">Pallacanestro</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="Volley" id="Volley">
+                    <label for="Volley">Volley</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="Rugby" id="Rugby">
+                    <label for="Rugby">Rugby</label>
+                </div>
+
+            </fieldset>
+
+        </section>
+       
+        <section>
+           <!--sezione con bottone non funzionante-->
+            <div>
+                <label for="disabled-button">Bottone disabilitato</label>
+                <button type="submit" disabled>tanto non funziono</button>
+            </div>
+
+        </section>
+    </form>
+</body>
+</html>
