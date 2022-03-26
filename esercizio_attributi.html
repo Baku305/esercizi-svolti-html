@@ -21,16 +21,17 @@
 </head>
 <body>
     <!--Form con input numerico, input data, checkbox multiplo e bottone-->
-    <form action="***.php" method="get">
+    <form action="***.php" method="get" style="max-width:fit-content; margin: auto;border: 1px solid gray;border-radius: 3%;padding: 5px;padding-bottom: 20px;">
+        <h1>Form per l'esercizio sugli attributi</h1>
         <!--sezione con inpunt numerico e data mensile-->
-        <section>
+        <section style="border-left: 1px solid black;border-right: 1px solid black;border-top: 1px solid black;border-radius: 10%;">
             
-            <div>
+            <div style="padding: 5px; text-align: end;">
                 <label for="number-input">Inserisci un numero</label>
-                <input type="number" name="number" id="number-input" min="0" max="100" step="2">
+                <input type="number" name="number" id="number-input" min="0" max="100" step="2" autofocus>
             </div>
-            <div>
-                <label for="data-input">inserisci una data qualunque</label>
+             <div style="padding: 5px;text-align: end;">
+                <label for="data-input">Inserisci una data qualunque</label>
                 <input type="month" name="data-input" id="data-input">
             </div>
 
@@ -38,23 +39,23 @@
         <!--sezioine con fieldset con input checkbox per hobby-->
         <section>
             
-            <fieldset>
+            <fieldset style="padding: 5px;margin-bottom: 8px;border-radius: 10%;">
 
                 <legend>Hobby</legend>
                 <div>
-                    <input type="checkbox" name="Calcio" id="Calcio">
+                    <input type="checkbox" name="Calcio" id="Calcio" value="Calcio" checked>
                     <label for="Calcio">Calcio</label>
                 </div>
                 <div>
-                    <input type="checkbox" name="Pallacanestro" id="Pallacanestro">
+                    <input type="checkbox" name="Pallacanestro" id="Pallacanestro" value="Pallacanestro">
                     <label for="Pallacanestro">Pallacanestro</label>
                 </div>
                 <div>
-                    <input type="checkbox" name="Volley" id="Volley">
+                    <input type="checkbox" name="Volley" id="Volley" value="Volley">
                     <label for="Volley">Volley</label>
                 </div>
                 <div>
-                    <input type="checkbox" name="Rugby" id="Rugby">
+                    <input type="checkbox" name="Rugby" id="Rugby" value="Rygby">
                     <label for="Rugby">Rugby</label>
                 </div>
 
@@ -62,9 +63,9 @@
 
         </section>
        
-        <section>
+        <section style="border-left: 1px solid black;border-right: 1px solid black;border-bottom: 1px solid black; border-radius: 20%;">
            <!--sezione con bottone non funzionante-->
-            <div>
+            <div style="padding: 10px; text-align: end;">
                 <label for="disabled-button">Bottone disabilitato</label>
                 <button type="submit" disabled>tanto non funziono</button>
             </div>
