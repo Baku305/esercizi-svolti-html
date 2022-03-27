@@ -88,7 +88,7 @@
             <section>                
                 
                 <fieldset style="max-width: fit-content;">
-                    <legend><em> I nostri abbonamenti</em></legend>
+                    <legend><h5><em> I nostri abbonamenti</em></h5></legend>
                     <!--scelta degli abbonamenti-->
                     <section>                        
                         <ul style="padding-left: 8px;">
@@ -97,7 +97,7 @@
                                 <label for="piano-free">Piano Free <span>0€</span></label>
                             </il>
                             <p>
-                                Questo piano totalmente gratuito di farà a mala pena accedere al servizio
+                                Questo piano totalmente gratuito ti farà a mala pena accedere al servizio
                             </p>
                             <il>
                                 <input type="radio" name="piano-abbonamenti" id="piano-base" value="piano-base">
@@ -124,31 +124,41 @@
                     </section>
                     <!--Select del piano pro-->
                     <section style="text-align: left;">
-                        <label for="Abbonamenti"><h5>Dai un <span>BOOST</span> al tuo piano di abbonamento</h5></label>
+                        <label for="Abbonamenti"><h5>Dai un'ulteriore <span><em> BOOST</em></span> al tuo piano di abbonamento</h5></label>
                         <br>
                         <select name="abbonamenti" id="abbonmenti">
                             <optgroup>
-                                <option value="vantaggio-free">telegiornale H24</option>                            
-                            </optgroup>                            
+                              <option value               ="vantaggio             -free"><span            >FREE</span>            telegiornale            H24 
+                              </option>             </optgroup>                            
                             
                             <optgroup>
-                                <option value="vantaggio-base">secondo telecomando</option>
-                                <option value="vantaggio-medio">telecamere personalizzate eventi sportivi</option>
-                                <option value="vantaggio-elite" selected>tutto</option>
+                                <option value="vantaggio-base"><span>3€</span>   secondo telecomando</option>
+                                <option value="vantaggio-medio"><span>5€</span> esperienza in 8K</option>
+                                <option value="vantaggio-elite" selected><span>7€</span> all inclusive</option> 
                             </optgroup>
-                        </select>                                            
+                        </select>
+
                     </section>
                     <!--dati carta di credtio-->
                     <section>
-                        <h5>Dati di Pagamento</h5>                        
-                        <input type="number" name="numero di carta" id="numero di carta">
-                        <label for="numero di carta">Numero di Carta</label>
-                        <br>                        
-                        <input type="number" name="CVC" id="CVC" min="3" max="3">
-                        <label for="CVC">CVC</label>
-                        <br>                        
-                        <input type="date" name="scadenza" id="scadenza" min="2022-03-27" max="2040-01-01">
-                        <label for="Scadenza">Scadenza</label>
+                        <h5>Dati di Pagamento</h5>                   <div>
+                            <label for="numero di carta">Numero di Carta</label>
+                            <br>
+                            <input type="number" name="numero di carta" id="numero di carta">
+                        </div>     
+                        <div>
+                          <label for="CVC">CVC</label>
+                          <br>
+                          <input type="number" name="CVC" id="CVC" min="3" max="3">
+                        </div>
+                        <div>
+                          <label for="Scadenza">Scadenza</label>
+                          <br>
+                          <input type="date" name="scadenza" id="scadenza" min="2022-03-27" max="2040-01-01">
+                        </div>
+                        <div style="font-size: 0.5em;">
+                                                  <p><em>*il pagamento dei piani viene calcolato su base annua</em></p>
+                                                </div>
                     </section>                   
                 </fieldset>
                 
@@ -156,8 +166,16 @@
             <!--indirizzo di fatturazione-->
             <section>
                 <h5>Dati fatturazione</h5>
-                <label for="indirizzo">Indirizzo</label>                
-                <input type="text" name="indirizzo" id="indirizzo">                
+                <br>
+                <p>
+                  <em>selezionare solo se differente dai dati inseriti</em>
+                </p>
+             <hr>
+                <div>
+                  <label for="indirizzo">Indirizzo</label>
+                  <input type="text" name="indirizzo" id="indirizzo">
+                </div>
+                                
             </section>
         </form>
     </main>
