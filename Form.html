@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio Form</title>
+
+    <meta name="author" content="Francesco Cristini">
+    <meta name="description" content="Soluzione esercizio sulle Form">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Esercizio Form">
+    <meta property="og:author" content="Francesco Cristini">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/***">
+    <meta property="og:url" content="https://www.***.it">
+</head>
+
+<body>
+    
+    <header>
+        <h1>Soluzione dell'esercizio sulle Form</h1>
+    </header>
+
+    <main>
+        <!--Form intera-->
+        <form action="***.php" method="get">
+            <h3>Modulo di <strong><span>iscrizione</span></strong></h3>
+            
+            <!--Sezione Email, password, nome e cognome, data di nascita, numero di telefono-->
+            <section>
+                <!--Email-->
+                <div>
+                    <label for="Email">Email</label>
+                    <br>
+                    <input type="email" name="Email" id="Email">
+                </div>
+                <!--password-->
+                <div>
+                    <label for="password">Password</label>
+                    <br>
+                    <input type="password" name="Password" id="Password">
+                </div>
+                <!--nome e cognome-->
+                <div>
+                    <label for="Nome">Nome</label>
+                    <br>
+                    <input type="text" name="nome" id="nome">
+                    <br>
+                    <label for="cognome">Cognome</label>
+                    <br>
+                    <input type="text" name="cognome" id="Cognome">
+                </div>
+                <!--data di nascita-->
+                <div>
+                    <label for="nascita">Data di nascita</label>
+                    <br>
+                    <input type="date" name="nascita" id="nascita" min="1940-01-01" max="2022-01-01">
+                </div>
+                <!--numero di telefono-->
+                <div>
+                    <label for="phone"><abbr title="numero">N°</abbr>di telefono</label>
+                    <input type="tel" name="phone" id="phone" list="prefissi">
+                    <!--datalist dei prefissi-->
+                    <datalist id="prefissi">
+                        <optgroup label="prefissi-italia">
+                            <option value="0039">Italia</option>
+                        </optgroup>
+                        <optgroup label="prefissi-mondo">
+                            <option value="0031">Francia</option>
+                            <option value="001">Stati Uniti</option>
+                            <option value="0061">Australia</option>
+                        </optgroup>
+                    </datalist>
+                </div>
+            </section>
+
+            <!--Sezione Abbonamento, vantaggi piano pro e dati carta di credito -->
+            <section>                
+                
+                <fieldset>
+                    <legend><em> I nostri abbonamenti</em></legend>
+                    <!--introduzione agli abbonamenti-->
+                    <section>
+                        <article>
+                            <h4>
+                                Piano Free <span>0€</span>
+                            </h4>
+                            <p>
+                                Questo piano totalmente gratuito di farà a mala pena accedere al servizio
+                            </p>
+                        </article>
+                        <article>
+                            <div>
+                                <h4>
+                                    Piano Base <span>7€</span> 
+                                </h4>
+                                <p>
+                                    Questo piano ti permetterà di vedere la tv, ma solo a giorni alterni
+                                </p>
+                            </div>
+                            <div>
+                                <h4>
+                                    Piano medio <span>12€</span>
+                                </h4>
+                                <p>
+                                    Ora si fa sul serio, avrai anche il telecomando in dotazione
+                                </p>
+                            </div>
+                            <div>
+                                <h4>
+                                    Piano Full <span>19€</span>
+                                </h4>
+                                <p>
+                                    Il meglio che ti potessi aspettare dal nostro servizio
+                                </p>
+                            </div>
+                        </article>
+                    </section>
+                    <!--Select deli abbonamenti-->
+                    <div>
+                        <label for="Abbonamenti">Piani disponibili</label>
+                        <select name="abbonamenti" id="abbonmenti">
+                            <colgroup>
+                                <option value="piano-free">piano free</option>
+                            </colgroup>                            
+                            
+                            <optgroup>
+                                <option value="piano-base">piano base</option>
+                                <option value="piano-medio">piano medio</option>
+                                <option value="piano-elite">piano elite</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </fieldset>
+            </section>
+        </form>
+    </main>
+
+</body>
+</html>
