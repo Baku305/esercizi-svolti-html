@@ -88,7 +88,7 @@
             <section>                
                 
                 <fieldset style="max-width: fit-content;">
-                    <legend><em> I nostri abbonamenti</em></legend>
+                    <legend><h5><em> I nostri abbonamenti</em></h5></legend>
                     <!--scelta degli abbonamenti-->
                     <section>                        
                         <ul style="padding-left: 8px;">
@@ -128,27 +128,34 @@
                         <br>
                         <select name="abbonamenti" id="abbonmenti">
                             <optgroup>
-                                <option value="vantaggio-free">telegiornale H24</option>                            
+                                <option value="vantaggio-free"><i>0€</i> telegiornale H24</option>                            
                             </optgroup>                            
                             
                             <optgroup>
-                                <option value="vantaggio-base">secondo telecomando</option>
-                                <option value="vantaggio-medio">telecamere personalizzate eventi sportivi</option>
-                                <option value="vantaggio-elite" selected>tutto</option>
+                                <option value="vantaggio-base"><i>5€</i> secondo telecomando</option>
+                                <option value="vantaggio-medio"><i>7€</i> telecamere personalizzate eventi sportivi</option>
+                                <option value="vantaggio-elite" selected><i>12€</i> all inclusive</option>
                             </optgroup>
                         </select>                                            
                     </section>
                     <!--dati carta di credtio-->
                     <section>
-                        <h5>Dati di Pagamento</h5>                        
-                        <input type="number" name="numero di carta" id="numero di carta">
-                        <label for="numero di carta">Numero di Carta</label>
-                        <br>                        
-                        <input type="number" name="CVC" id="CVC" min="3" max="3">
-                        <label for="CVC">CVC</label>
-                        <br>                        
-                        <input type="date" name="scadenza" id="scadenza" min="2022-03-27" max="2040-01-01">
-                        <label for="Scadenza">Scadenza</label>
+                        <h5>Dati di Pagamento</h5>
+                        <div>
+                            <label for="numero di carta">Numero di Carta</label>
+                            <br>
+                            <input type="number" name="numero di carta" id="numero di carta">
+                        </div>
+                        <div>
+                            <label for="CVC">CVC</label>
+                            <br>
+                            <input type="number" name="CVC" id="CVC" min="3" max="3">
+                        </div>
+                        <div>
+                            <label for="Scadenza">Scadenza</label>
+                            <br>
+                            <input type="date" name="scadenza" id="scadenza" min="2022-03-27" max="2040-01-01">
+                        </div>                     
                     </section>                   
                 </fieldset>
                 
@@ -156,10 +163,6 @@
             <!--indirizzo di fatturazione-->
             <section>
                 <h5>Dati fatturazione</h5>
-<<<<<<< HEAD
-                <label for="indirizzo">Indirizzo</label>                
-                <input type="text" name="indirizzo" id="indirizzo">                
-=======
                 <p>
                   <em>Compilare solo se differente dai dati inseriti precedentemente </em>
                 </p>
@@ -168,11 +171,8 @@
                   <label for="indirizzo">Indirizzo</label>
                   <input type="text" name="indirizzo" id="indirizzo">
                 </div>
-                                
->>>>>>> 5ff0131f2e129c0df2ec90d91a79b7a03ab924ce
             </section>
         </form>
-        ciao
     </main>
 
 </body>
