@@ -20,6 +20,28 @@
         section{
             padding: 5px;
         }
+        #div-fatturazione{
+            display: none ;
+        }
+        #check-fatturazione:checked ~ #div-fatturazione {
+            display: block;
+        }
+        button{
+            padding: 1.5em;
+        }
+        .button{
+            padding: 2em;
+        }
+        form{
+            border: 2px solid black;
+            border-radius: 1%;
+            max-width: fit-content;
+            margin: auto;
+        }
+        h1{
+            max-width: fit-content;
+            margin: auto;
+        }
     </style>
 </head>
 
@@ -41,35 +63,35 @@
                 <div>
                     <label for="Email">Email</label>
                     <br>
-                    <input type="email" name="Email" id="Email">
+                    <input type="email" name="Email" id="Email" required>
                 </div>
                 <!--password-->
                 <div>
                     <label for="password">Password</label>
                     <br>
-                    <input type="password" name="Password" id="Password">
+                    <input type="password" name="Password" id="Password" required>
                 </div>
                 <!--nome e cognome-->
                 <div>
                     <label for="Nome">Nome</label>
                     <br>
-                    <input type="text" name="nome" id="nome">
+                    <input type="text" name="nome" id="nome" required>
                     <br>
                     <label for="cognome">Cognome</label>
                     <br>
-                    <input type="text" name="cognome" id="Cognome">
+                    <input type="text" name="cognome" id="Cognome" required>
                 </div>
                 <!--data di nascita-->
                 <div>
                     <label for="nascita">Data di nascita</label>
                     <br>
-                    <input type="date" name="nascita" id="nascita" min="1940-01-01" max="2022-01-01">
+                    <input type="date" name="nascita" id="nascita" min="1940-01-01" max="2022-01-01" required>
                 </div>
                 <!--numero di telefono-->
                 <div>
                     <label for="phone"><abbr title="numero">N°</abbr>di telefono</label>
                     <br>
-                    <input type="tel" name="phone" id="phone" list="prefissi">
+                    <input type="tel" name="phone" id="phone" list="prefissi" required pattern="[0-9]{4}-[0-9]{10}" placeholder="0039-0623634536">
                     <!--datalist dei prefissi-->
                     <datalist id="prefissi">
                         <optgroup label="prefissi-italia">
@@ -91,7 +113,7 @@
                     <legend><h5><em> I nostri abbonamenti</em></h5></legend>
                     <!--scelta degli abbonamenti-->
                     <section>                        
-                        <ul style="padding-left: 8px;">
+                        <ul style="padding-left: 8px;" aria-readonly="true">
                             <il>
                                 <input type="radio" name="piano-abbonamenti" id="piano-free" value="piano-free">
                                 <label for="piano-free">Piano Free <span>0€</span></label>
@@ -126,12 +148,12 @@
                     <section style="text-align: left;">
                         <label for="Abbonamenti"><h5>Dai un <span>BOOST</span> al tuo piano di abbonamento</h5></label>
                         <br>
-                        <select name="abbonamenti" id="abbonmenti">
-                            <optgroup>
+                        <select name="abbonamenti" id="abbonmenti" required>
+                            <optgroup label="FREE">
                                 <option value="vantaggio-free"><i>0€</i> telegiornale H24</option>                            
                             </optgroup>                            
                             
-                            <optgroup>
+                            <optgroup label="PRO">
                                 <option value="vantaggio-base"><i>5€</i> secondo telecomando</option>
                                 <option value="vantaggio-medio"><i>7€</i> telecamere personalizzate eventi sportivi</option>
                                 <option value="vantaggio-elite" selected><i>12€</i> all inclusive</option>
@@ -144,34 +166,38 @@
                         <div>
                             <label for="numero di carta">Numero di Carta</label>
                             <br>
-                            <input type="number" name="numero di carta" id="numero di carta">
+                            <input type="text" name="numero di carta" id="numero di carta" minlength="13" maxlength="16" pattern="[0-9]{13,16}" required>
                         </div>
                         <div>
                             <label for="CVC">CVC</label>
                             <br>
-                            <input type="number" name="CVC" id="CVC" min="3" max="3">
+                            <input type="text" name="CVC" id="CVC" minlength="3" maxlength="3" pattern="([0-9][0-9][0-9])" required>
                         </div>
                         <div>
                             <label for="Scadenza">Scadenza</label>
                             <br>
-                            <input type="date" name="scadenza" id="scadenza" min="2022-03-27" max="2040-01-01">
+                            <input type="date" name="scadenza" id="scadenza" min="2022-03-27" max="2040-01-01" required>
                         </div>                     
                     </section>                   
                 </fieldset>
                 
             </section>
             <!--indirizzo di fatturazione-->
-            <section>
+            <section style="max-width: fit-content;">
                 <h5>Dati fatturazione</h5>
-                <p>
-                  <em>Compilare solo se differente dai dati inseriti precedentemente </em>
-                </p>
-             <hr>
-                <div>
+                  <input type="checkbox" name="check-fatturazione" id="check-fatturazione">
+                  <label for="check-fatturazione"><em>Compilare solo se differente dai dati inseriti precedentemente </em></label>
+                <hr>
+                <div id="div-fatturazione">
                   <label for="indirizzo">Indirizzo</label>
-                  <input type="text" name="indirizzo" id="indirizzo">
+                  <input type="text" name="indirizzo" id="indirizzo" required>
                 </div>
+                
             </section>
+            <div class="button">
+                <button type="submit">Abbonati</button>
+                <button type="reset">Resetta i campi</button>
+            </div>
         </form>
     </main>
 
