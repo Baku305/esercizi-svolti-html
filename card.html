@@ -1,34 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" /> /
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Esercizio Card</title>
 
-    <meta name="authore" content="Francesco Cristini">
-    <meta name="description" content="Esercizio svolto sulla copia di una card Html senza uso di CSS">
+    <meta name="authore" content="Francesco Cristini" />
+    <meta name="description" content="Esercizio svolto sulla copia di una card Html senza uso di CSS" />
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
-    <meta property="og:title" content="Esercizio Card">
-    <meta property="og:author" content="Francesco Cristini">
-    <meta property="og:description" content="Esercizio svolto sulla copia di una card Html senza uso di CSS">
-    <meta property="og:image" content="assets/***">
-    <meta property="og:link" content="https://www.***.it">
+    <meta property="og:title" content="Esercizio Card" />
+    <meta property="og:author" content="Francesco Cristini" />
+    <meta property="og:description" content="Esercizio svolto sulla copia di una card Html senza uso di CSS" />
+    <meta property="og:image" content="assets/***" />
+    <meta property="og:link" content="https://www.***.it" />
 </head>
+
 <body>
-    <head>
-        Copia senza l'uso di <abbr title="Cascading Style Sheets">CSS</abbr> di una card <abbr title="Hiper Text Markup Language">Html</abbr>
-    </head>
+    <header>
+        <h1>CARD <span>HTML</span></h1>
+    </header>
     <main>
+        <!--contenitore della card intera-->
         <article>
+            <!--sezione con l'immagine-->
             <section>
-                <figure>
-                    <img src="" alt="" srcset="">
-                </figure>
+                <picture>
+                    <source media="(min-width: 800px)" srcset="assets/panda-1217.jpg" />
+                    <source media="(max-width: 800px)" srcset="assets/panda-800.jpg" />
+                    <img src="assets/panda-1217.jpg" alt="Un bel panda che mangia">
+                </picture>
+            </section>
+            <!--sezione con titolo e descrizione della card-->
+            <section>
+                <h2>Il panda gigante</h2>
+                <br />
+                <p>
+                    Quando pensi a un <span><strong>panda gigante</strong></span>, la prima caratteristica che ti viene
+                    in mente sarà probabilmente la
+                    sua tipica <strong><em>pelliccia</em></strong>, che come avrai visto in molte foto alterna ampie
+                    zone <strong>bianche</strong>, come
+                    la <strong>coda</strong>,
+                    al <strong>nero</strong> che circonda gli <strong>occhi </strong> e ricopre
+                    <strong>orecchie</strong> , <strong>spalle</strong> , <strong>braccia</strong> e <strong>gambe</strong>
+                    ...
+                </p>
+            </section>
+            <section>
+                <Em>Dove vive</Em> : <strong><span>Cina</span></strong>
+            </section>
+            <section>
+                <em>Cosa mangia</em> : <strong><span>Foglie e ramoscelli</span></strong>
+            </section>
+            <section>
+                <em>Status</em> : <strong><span>A rischio di estinzione</span></strong>
+            </section>
+            <section>
+                <span><a href="card.html">Card</a></span>
+                <span><a href="form.html">Iscrizione</a></span>
             </section>
         </article>
     </main>
 </body>
+
 </html>
