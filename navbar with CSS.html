@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Esercizio Navbar</title>
+
+  <meta name="author" content="Francesco Cristini" />
+  <meta name="description" content="Esercizio svolto della copia di una navbar" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+  <meta property="og:title" content="esercizio navbar" />
+  <meta property="og:description" content="esercizio svolto della copia di una navbar" />
+  <meta property="og:author" content="Francesco Cristini" />
+  <meta property="og:image" content="assets/***.jpg" />
+  <meta property="og:url" content="https://www.***.it" />
+
+  <style>
+    body{
+      margin: 0;
+    }
+    nav{
+      box-sizing: border-box;
+      background-color: #212529;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0.9em;
+    }
+    .linknav{
+      color: whitesmoke;
+      text-decoration: none;
+    }
+    #linktitle{
+      font-size: 1.2em;
+    }
+    #linkhome{
+      font-weight: 600;
+    }
+    #linklink{
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.719) ;
+    }
+    #linkselect{
+      font-weight: 200;
+      background-color: rgba(0, 0, 0, 0);
+      color: rgba(255, 255, 255, 0.534);
+      border: none;
+      font-size: 1.1em;
+
+    }
+    #linkdisabled{
+      pointer-events: none;
+      cursor: default;
+      color: rgba(187, 184, 184, 0.486);
+    }
+    option{
+      background-color: #212529;
+      border: none;
+    }
+    span{
+      margin-left: 1.5em;
+      margin-right: 1.5em;
+    }
+    button{
+      background-color: #212529;
+      border: green solid 1px;
+      color: white;
+    }
+    .searchbar{
+      padding: 0.8em;
+      border-radius: 5px;
+    }
+    .spansearch{
+      margin: auto;
+      margin-right: 10px;
+    }
+
+  </style>
+  
+</head>
+
+<body>
+  <header>
+    <!--navbar intera-->
+    <nav>
+      <!--titolo-->
+      <span>
+        <strong class="linknav" id="linktitle">NavBar</strong>
+      </span>
+      <!--home link-->
+      <span>
+        <a href="Home" class="linknav" id="linkhome">Home</a>
+      </span>
+      <!--link indefinito-->
+      <span>
+        <a href="link" class="linknav" id="linklink">link</a>
+      </span>
+      <!--tag select per menu a discesa-->
+      <span>
+        <select id="linkselect">
+          <option value="Dropdown">Dropdown</option>
+          <option value="drop2">drop2</option>
+          <option value="drdr3">drdr3</option>
+        </select>
+      </span>
+      <!--link disabilitato-->
+      <span>
+        <a href="disabled" class="linknav" id="linkdisabled">disabled</a>
+      </span>
+      <!--search bar-->
+      <span class="spansearch">
+          <input type="search" name="search" id=""placeholder="cerca" class="searchbar"/>
+          <button type="submit" class="searchbar">Cerca</button>
+      </span>
+    </nav>
+  </header>
+</body>
+
+</html>
