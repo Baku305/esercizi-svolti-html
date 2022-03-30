@@ -50,6 +50,10 @@
             content: "*";
             color: red;
         }
+        label.labelf::after{
+            content: none;
+        }
+
     </style>
 </head>
 
@@ -194,10 +198,10 @@
             <section style="max-width: fit-content;">
                 <h5>Dati fatturazione</h5>
                   <input type="checkbox" name="check-fatturazione" id="check-fatturazione" />
-                  <label for="check-fatturazione"><em>Selezionare solo se differente dai dati inseriti precedentemente </em></label>
+                  <label for="check-fatturazione" class="labelf"><em>Selezionare solo se differente dai dati inseriti precedentemente </em></label>
                 <hr>
                 <div id="div-fatturazione">
-                  <label for="indirizzo">Indirizzo</label>
+                  <label for="indirizzo">Indirizzo</label class="labelf">
                   <input type="text" name="indirizzo" id="indirizzo" />
                 </div>
                 

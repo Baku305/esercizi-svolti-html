@@ -22,14 +22,20 @@
     body{
       margin: 0;
     }
+    /*caratteristiche principali navbar*/
     nav{
-      box-sizing: border-box;
+      box-sizing: content-box;
       background-color: #212529;
       font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       display: flex;
       justify-content: flex-start;
       align-items: center;
       padding: 0.9em;
+    }
+    /*caratteristiche singoli link*/
+    span{
+      margin-left: 1.5em;
+      margin-right: 1.5em;
     }
     .linknav{
       color: whitesmoke;
@@ -51,20 +57,15 @@
       color: rgba(255, 255, 255, 0.534);
       border: none;
       font-size: 1.1em;
-
-    }
-    #linkdisabled{
-      pointer-events: none;
-      cursor: default;
-      color: rgba(187, 184, 184, 0.486);
     }
     option{
       background-color: #212529;
       border: none;
     }
-    span{
-      margin-left: 1.5em;
-      margin-right: 1.5em;
+    #linkdisabled{
+      pointer-events: none;
+      cursor: default;
+      color: rgba(187, 184, 184, 0.486);
     }
     button{
       background-color: #212529;
@@ -75,6 +76,7 @@
       padding: 0.8em;
       border-radius: 5px;
     }
+    /*posizionamento a destra della searchbar*/
     .spansearch{
       margin: auto;
       margin-right: 10px;
