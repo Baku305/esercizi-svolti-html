@@ -19,7 +19,7 @@
     <meta property="og:link" content="https://www.***.it" />
 
     <style>
-        div{
+        div#card{
             max-width: 400px;
             display: block;
             max-width: fit-content;
@@ -35,7 +35,7 @@
             max-width: fit-content;
             margin: auto;
         }
-        section{
+        div.sezione{
             padding: 1.1em;
         }
         img{
@@ -52,15 +52,15 @@
     </header>
     <main>
         <!--contenitore della card intera-->
-        <div>
+        <div id="card">
             <!--sezione con l'immagine-->
-            <section id="secimg">
+            <div class="sezione"id="secimg">
                 <figure>
                     <img src="assets/panda.jpg" alt="Un bel panda che mangia" />
                 </figure>   
-            </section> <hr />
+            </div> <hr />
             <!--sezione con titolo e descrizione della card-->
-            <section id="secp">
+            <div class="sezione"id="secp">
                 <h2>Il panda gigante</h2>
                 <br />
                 <p>
@@ -73,25 +73,25 @@
                     <strong>orecchie</strong> , <strong>spalle</strong> , <strong>braccia</strong> e <strong>gambe</strong>
                     ...
                 </p>
-            </section>
+            </div>
             <hr />
             <!--sezione primo oggetto-->
-            <section id="secprimoogg">
+            <div class="sezione"id="secprimoogg">
                 <Em>Dove vive</Em> : <strong><span>Cina</span></strong>
-            </section> <hr />
+            </div> <hr />
             <!--sezione secondo oggetto-->
-            <section id="secsecondoogg">
+            <div class="sezione"id="secsecondoogg">
                 <em>Cosa mangia</em> : <strong><span>Foglie e ramoscelli</span></strong>
-            </section> <hr />
+            </div> <hr />
             <!--sezione terzo oggetto-->
-            <section id="secterzoogg">
+            <div class="sezione"id="secterzoogg">
                 <em>Status</em> : <strong><span>A rischio di estinzione</span></strong>
-            </section> <hr />
+            </div> <hr />
             <!--sezione quarto link-->
-            <section id="seclink">
+            <div class="sezione"id="seclink">
                 <span><a href="card.html">Card</a></span>
                 <span><a href="form.html">Iscrizione</a></span>
-            </section>
+            </div>
         </div>
     </main>
 </body>
