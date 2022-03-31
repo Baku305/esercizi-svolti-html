@@ -23,11 +23,25 @@
             max-width: 400px;
             display: block;
             max-width: fit-content;
+            width: min-content;
+            height: min-content;
+            margin: auto;
+            border: 1px solid rgba(0, 0, 0, 0.493);
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
             
         }
         header{
             max-width: fit-content;
             margin: auto;
+        }
+        section{
+            padding: 1.1em;
+        }
+        img{
+            width: 400px;
+            border-radius: 5px;
+            box-shadow: 0 8px 4px 0 rgba(0,0,0,0.2);
         }
     </style>
 </head>
@@ -40,13 +54,13 @@
         <!--contenitore della card intera-->
         <div>
             <!--sezione con l'immagine-->
-            <section>
+            <section id="secimg">
                 <figure>
                     <img src="assets/panda.jpg" alt="Un bel panda che mangia" />
                 </figure>   
-            </section>
+            </section> <hr />
             <!--sezione con titolo e descrizione della card-->
-            <section>
+            <section id="secp">
                 <h2>Il panda gigante</h2>
                 <br />
                 <p>
@@ -60,20 +74,21 @@
                     ...
                 </p>
             </section>
+            <hr />
             <!--sezione primo oggetto-->
-            <section>
+            <section id="secprimoogg">
                 <Em>Dove vive</Em> : <strong><span>Cina</span></strong>
-            </section>
+            </section> <hr />
             <!--sezione secondo oggetto-->
-            <section>
+            <section id="secsecondoogg">
                 <em>Cosa mangia</em> : <strong><span>Foglie e ramoscelli</span></strong>
-            </section>
+            </section> <hr />
             <!--sezione terzo oggetto-->
-            <section>
+            <section id="secterzoogg">
                 <em>Status</em> : <strong><span>A rischio di estinzione</span></strong>
-            </section>
+            </section> <hr />
             <!--sezione quarto link-->
-            <section>
+            <section id="seclink">
                 <span><a href="card.html">Card</a></span>
                 <span><a href="form.html">Iscrizione</a></span>
             </section>
