@@ -19,29 +19,51 @@
     <meta property="og:link" content="https://www.***.it" />
 
     <style>
-        div#card{
+        section{
+            display: flex;
+            object-fit: contain;
+            align-items: center;
+            
+        }
+        div.card{
+            object-fit: contain;
             max-width: 400px;
             display: block;
-            max-width: fit-content;
-            width: min-content;
-            height: min-content;
-            margin: auto;
+            margin: 20px;
             border: 1px solid rgba(0, 0, 0, 0.493);
             border-radius: 5px;
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            
+            background-color: aliceblue;  
+        }
+        div.card:hover {
+            transition: 500ms;
+            transform: scale(1.5);
+        }
+        div.card:hover .sezionelink{
+            display: block;
         }
         header{
             max-width: fit-content;
             margin: auto;
         }
         div.sezione{
-            padding: 1.1em;
+            padding: 5px;
+        }
+        figure{
+            margin: 0;
+            padding: 0;
         }
         img{
-            width: 400px;
+            width: 100%;
+            height: 100%;
             border-radius: 5px;
             box-shadow: 0 8px 4px 0 rgba(0,0,0,0.2);
+        }
+        h2{
+            margin-bottom: 0;
+        }
+        .sezionelink{
+            display: none;
         }
     </style>
 </head>
@@ -51,48 +73,136 @@
         <h1>CARD <span>HTML</span></h1>
     </header>
     <main>
-        <!--contenitore della card intera-->
-        <div id="card">
-            <!--sezione con l'immagine-->
-            <div class="sezione"id="secimg">
-                <figure>
-                    <img src="assets/panda.jpg" alt="Un bel panda che mangia" />
-                </figure>   
-            </div> <hr />
-            <!--sezione con titolo e descrizione della card-->
-            <div class="sezione"id="secp">
-                <h2>Il panda gigante</h2>
-                <br />
-                <p>
-                    Quando pensi a un <span><strong>panda gigante</strong></span>, la prima caratteristica che ti viene
-                    in mente sarà probabilmente la
-                    sua tipica <strong><em>pelliccia</em></strong>, che come avrai visto in molte foto alterna ampie
-                    zone <strong>bianche</strong>, come
-                    la <strong>coda</strong>,
-                    al <strong>nero</strong> che circonda gli <strong>occhi </strong> e ricopre
-                    <strong>orecchie</strong> , <strong>spalle</strong> , <strong>braccia</strong> e <strong>gambe</strong>
-                    ...
-                </p>
+        <section>
+            <!--contenitore della card intera-->
+            <div class="card">
+                <!--sezione con l'immagine-->
+                <div class="sezione">
+                    <figure>
+                        <img src="assets/panda.jpg" alt="Un bel panda che mangia" />
+                    </figure>   
+                </div> <hr />
+                <!--sezione con titolo e descrizione della card-->
+                <div class="sezione">
+                    <h2>Il panda gigante</h2>
+                    <br />
+                    <p>
+                        Quando pensi a un <span><strong>panda gigante</strong></span>, la prima caratteristica che ti viene
+                        in mente sarà probabilmente la
+                        sua tipica <strong><em>pelliccia</em></strong>, che come avrai visto in molte foto alterna ampie
+                        zone <strong>bianche</strong>, come
+                        la <strong>coda</strong>,
+                        al <strong>nero</strong> che circonda gli <strong>occhi </strong> e ricopre
+                        <strong>orecchie</strong> , <strong>spalle</strong> , <strong>braccia</strong> e <strong>gambe</strong>
+                        ...
+                    </p>
+                </div>
+                <hr />
+                <!--sezione primo oggetto-->
+                <div class="sezione sezionelink">
+                    <Em>Dove vive</Em> : <strong><span>Cina</span></strong>
+                </div> <hr />
+                <!--sezione secondo oggetto-->
+                <div class="sezione sezionelink">
+                    <em>Cosa mangia</em> : <strong><span>Foglie e ramoscelli</span></strong>
+                </div> <hr />
+                <!--sezione terzo oggetto-->
+                <div class="sezione sezionelink">
+                    <em>Status</em> : <strong><span>A rischio di estinzione</span></strong>
+                </div> <hr />
+                <!--sezione quarto link-->
+                <div class="sezione sezionelink">
+                    <span><a href="card.html">Card</a></span>
+                    <span><a href="form.html">Iscrizione</a></span>
+                </div>
             </div>
-            <hr />
-            <!--sezione primo oggetto-->
-            <div class="sezione"id="secprimoogg">
-                <Em>Dove vive</Em> : <strong><span>Cina</span></strong>
-            </div> <hr />
-            <!--sezione secondo oggetto-->
-            <div class="sezione"id="secsecondoogg">
-                <em>Cosa mangia</em> : <strong><span>Foglie e ramoscelli</span></strong>
-            </div> <hr />
-            <!--sezione terzo oggetto-->
-            <div class="sezione"id="secterzoogg">
-                <em>Status</em> : <strong><span>A rischio di estinzione</span></strong>
-            </div> <hr />
-            <!--sezione quarto link-->
-            <div class="sezione"id="seclink">
-                <span><a href="card.html">Card</a></span>
-                <span><a href="form.html">Iscrizione</a></span>
+
+            <!--contenitore della card intera-->
+            <div class="card">
+                <!--sezione con l'immagine-->
+                <div class="sezione">
+                    <figure>
+                        <img src="assets/panda.jpg"/>
+                    </figure>   
+                </div> <hr />
+                <!--sezione con titolo e descrizione della card-->
+                <div class="sezione">
+                    <h2>Il panda gigante</h2>
+                    <br />
+                    <p>
+                        Quando pensi a un <span><strong>panda gigante</strong></span>, la prima caratteristica che ti viene
+                        in mente sarà probabilmente la
+                        sua tipica <strong><em>pelliccia</em></strong>, che come avrai visto in molte foto alterna ampie
+                        zone <strong>bianche</strong>, come
+                        la <strong>coda</strong>,
+                        al <strong>nero</strong> che circonda gli <strong>occhi </strong> e ricopre
+                        <strong>orecchie</strong> , <strong>spalle</strong> , <strong>braccia</strong> e <strong>gambe</strong>
+                        ...
+                    </p>
+                </div>
+                <hr />
+                <!--sezione primo oggetto-->
+                <div class="sezione sezionelink">
+                    <Em>Dove vive</Em> : <strong><span>Cina</span></strong>
+                </div> <hr />
+                <!--sezione secondo oggetto-->
+                <div class="sezione sezionelink">
+                    <em>Cosa mangia</em> : <strong><span>Foglie e ramoscelli</span></strong>
+                </div> <hr />
+                <!--sezione terzo oggetto-->
+                <div class="sezione sezionelink">
+                    <em>Status</em> : <strong><span>A rischio di estinzione</span></strong>
+                </div> <hr />
+                <!--sezione quarto link-->
+                <div class="sezione sezionelink">
+                    <span><a href="card.html">Card</a></span>
+                    <span><a href="form.html">Iscrizione</a></span>
+                </div>
             </div>
-        </div>
+
+            <!--contenitore della card intera-->
+            <div class="card">
+                <!--sezione con l'immagine-->
+                <div class="sezione">
+                    <figure>
+                        <img src="assets/panda.jpg" alt="Un bel panda che mangia" />
+                    </figure>   
+                </div> <hr />
+                <!--sezione con titolo e descrizione della card-->
+                <div class="sezione">
+                    <h2>Il panda gigante</h2>
+                    <br />
+                    <p>
+                        Quando pensi a un <span><strong>panda gigante</strong></span>, la prima caratteristica che ti viene
+                        in mente sarà probabilmente la
+                        sua tipica <strong><em>pelliccia</em></strong>, che come avrai visto in molte foto alterna ampie
+                        zone <strong>bianche</strong>, come
+                        la <strong>coda</strong>,
+                        al <strong>nero</strong> che circonda gli <strong>occhi </strong> e ricopre
+                        <strong>orecchie</strong> , <strong>spalle</strong> , <strong>braccia</strong> e <strong>gambe</strong>
+                        ...
+                    </p>
+                </div>
+                <hr />
+                <!--sezione primo oggetto-->
+                <div class="sezione sezionelink" >
+                    <Em>Dove vive</Em> : <strong><span>Cina</span></strong>
+                </div> <hr />
+                <!--sezione secondo oggetto-->
+                <div class="sezione sezionelink" >
+                    <em>Cosa mangia</em> : <strong><span>Foglie e ramoscelli</span></strong>
+                </div> <hr />
+                <!--sezione terzo oggetto-->
+                <div class="sezione sezionelink"  >
+                    <em>Status</em> : <strong><span>A rischio di estinzione</span></strong>
+                </div> <hr />
+                <!--sezione quarto link-->
+                <div class="sezione sezionelink">
+                    <span><a href="card.html">Card</a></span>
+                    <span><a href="form.html">Iscrizione</a></span>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 
